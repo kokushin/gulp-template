@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+@mixin clearfix {
+    &:before,
+    &:after {
+        content: " ";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+@mixin bg($url, $repeat, $position, $size) {
+  background-image: url($url);
+  background-repeat: $repeat;
+  background-position: $position;
+  background-size: $size;
+}
+
+@mixin hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
+@mixin media-mobile {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin media-tablet {
+  @media screen and (max-width: 990px) {
+    @content;
+  }
+}

@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+.c-button {
+  display: inline-block;
+  vertical-align: top;
+  padding: 14px 28px;
+  box-shadow: 0 0 2px rgba(0,0,0,.26);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1;
+  cursor: pointer;
+
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+}
+
+.c-messageBox {
+  width: 400px;
+  font-size: 16px;
+  line-height: 1.6;
+}
