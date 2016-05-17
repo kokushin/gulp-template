@@ -2,6 +2,7 @@
 
 - EJS、SASS(SCSS)のコンパイル
 - BabelによるES6のトランスパイル
+- webpackによるJavaScript管理
 - ブラウザのオートリロード
 - CSSのベンダープレフィックス補完
 - CSS、JS、画像の圧縮
