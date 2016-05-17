@@ -1,6 +1,10 @@
 # gulp-template
 
-gulp + webpack + sass の簡易的な構築環境
+- EJS、SASS(SCSS)のコンパイル
+- BabelによるES6のトランスパイル
+- ブラウザのオートリロード
+- CSSのベンダープレフィックス補完
+- CSS、JS、画像の圧縮
 
 ### インストール
 
@@ -9,6 +13,9 @@ gulp + webpack + sass の簡易的な構築環境
 ```
 $ npm install
 ```
+
+※テスト用にjQUery1.11.3、bxSlider 最新版がインストールされます。  
+不要な場合はpackage.jsonから削除してください。
 
 ### サーバー起動と監視
 
@@ -30,8 +37,6 @@ $ gulp build
 
 ### 追加検討中
 
-- gulp-jade
-- gulp-ejs
 - gulp-sourcemaps
 - gulp-frontnote
 - gulp-minify-html
