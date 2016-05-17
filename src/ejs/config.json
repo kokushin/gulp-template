@@ -1,0 +1,10 @@
+{
+  "title": "Sample",
+  "url": "http://example.com/",
+  "description": "This is Sample Site.",
+  "keywords": "keyword1,keyword2",
+  "viewport": "width=device-width, initial-scale=1",
+  "og_type": "website",
+  "og_url": "http://example.com/",
+  "og_image": "http://example.com/share.png"
+}

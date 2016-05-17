@@ -1,27 +1,60 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="utf-8">
-  <title>template</title>
-  <link rel="stylesheet" href="assets/css/bundle.css">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+  <meta charset="UTF-8">
+
+  <title>Front-Page | Sample</title>
+
+  <meta name="description" content="This is Sample Site.">
+  <meta name="keywords" content="keyword1,keyword2">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <!--[if IE]>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <![endif]-->
+
+  <meta property="og:title" content="Front-Page | Sample">
+  <meta property="og:description" content="This is Sample Site.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://example.com/">
+  <meta property="og:image" content="http://example.com/share.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@example">
+  <meta name="twitter:title" content="Front-Page | Sample">
+  <meta name="twitter:description" content="This is Sample Site.">
+  <meta name="twitter:image:src" content="http://example.com/share.png">
+
+  <link rel="canonical" href="http://example.com/">
+  <link rel="shortcut icon" href="./favicon.png">
+
+  <link rel="stylesheet" href="./assets/css/bundle.css">
 </head>
 <body>
 
   <header>
-    <h1>It, worked!</h1>
-  </header>
+  <h1>Sample</h1>
+</header>
 
   <main>
     <div class="c-messageBox">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos quasi, beatae similique. Iure maiores enim voluptatum alias. Quos corrupti eos suscipit maxime, quibusdam doloremque, nobis aspernatur, facilis harum rerum vel!</p>
     </div>
-    <div class="c-button"><a href="#">Button</a></div>
+    <div class="c-button"><a href="#" id="js-button">Say!</a></div>
   </main>
 
+  <ul id="js-slider">
+    <li><img src="./assets/img/sample1.jpg" height="200" width="730" alt=""></li>
+    <li><img src="./assets/img/sample2.jpg" height="200" width="730" alt=""></li>
+    <li><img src="./assets/img/sample3.jpg" height="200" width="730" alt=""></li>
+  </ul>
+
   <footer>
-    <small>&copy; 2016 template</small>
-  </footer>
+  <small>&copy; 2016 Sample</small>
+</footer>
 
   <script src="./assets/js/bundle.js"></script>
+
 </body>
 </html>

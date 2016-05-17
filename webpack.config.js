@@ -1,22 +1,33 @@
+var webpack = require('webpack');
 var path = require('path');
 
 module.exports = {
     entry: {
-        app: './src/ts/main.ts'
+        app: './src/js/main.js'
     },
     output: {
         filename: 'bundle.js'
     },
     resolve: {
         root: [path.join(__dirname, 'node_modules')],
-        extensions: ['', '.ts', 'webpack.js', '.web.js', '.js']
+        extensions: ['', '.js', '.json', '.html'],
     },
     module: {
         loaders: [
             {
-                test: /\.ts$/,
-                loader: 'ts-loader'
+                test: /\.js?$/,
+                exclude: /node_modules/,
+                loader: 'babel-loader'
             }
         ]
-    }
+    },
+    plugins: [
+        new webpack.optimize.AggressiveMergingPlugin(),
+        new webpack.optimize.DedupePlugin(),
+        new webpack.ProvidePlugin({
+            jQuery: 'jquery',
+            $: 'jquery',
+            jquery: 'jquery'
+        })
+    ]
 }
